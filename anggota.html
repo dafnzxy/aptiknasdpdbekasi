@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="icon" type="image/png" href="aptiknas3.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Anggota APTIKNAS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 font-sans">
+     <header class="bg-white shadow-lg border-b-4 border-[#0054A6]">
+    <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <img src="Aptiknas Logo Horizontal 1 Transparent.png" alt="Logo APTIKNAS" class="h-24 rounded bg-white p-1" />
+        </div>
+        <ul class="flex space-x-4 text-lg">
+            <li><a href="index.html" class="hover:text-[#0054A6] text-[#0054A6] font-bold ">Beranda</a></li>
+            <li class="relative group">
+    <button class="hover:text-[#0054A6] text-[#0054A6] font-bold flex items-center">
+        Anggota
+        <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M19 9l-7 7-7-7"/>
+        </svg>
+    </button>
+    <ul class="absolute left-0 top-full mt-0 w-56 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible pointer-events-none group-hover:pointer-events-auto transition-all duration-200 z-20">
+        <li>
+            <a href="daftar-anggota.html" class="block px-4 py-2 hover:bg-gray-100 text-gray-800">Daftar Anggota APTIKNAS</a>
+        </li>
+        <li>
+            <a href="anggota.html" class="block px-4 py-2 hover:bg-gray-100 text-gray-800">Anggota APTIKNAS</a>
+        </li>
+    </ul>
+</li>
+            <li class="relative group">
+                <button class="hover:text-[#0054A6] text-[#0054A6] font-bold flex items-center">
+                    Toko
+                    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <ul class="absolute left-0 mt-2 w-56 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-200 z-20">
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 text-gray-800">Menu 1</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 text-gray-800">Menu 2</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="pengurus.html" class="hover:text-[#0054A6] text-[#0054A6] font-bold">Pengurus</a></li>
+            <li><a href="index.html#contact" class="hover:text-[#0054A6] text-[#0054A6] font-bold">Kontak</a></li>
+        </ul>
+    </nav>
+</header>
+    <!-- Section Anggota (copy dari index.html bagian anggota) -->
+    <section id="members" class="container mx-auto px-4 py-20">
+    <h2 class="text-3xl font-bold text-center mb-10">
+        Daftar Anggota
+        <span class="inline-block align-middle">
+            <span class="text-red-600">AP</span><span class="text-sky-500">TIK</span><span class="text-green-600">NAS</span>
+        </span>
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded shadow-lg flex flex-col items-center">
+            <img src="pt multi it.png" alt="Logo PT Teknologi Nusantara" class="w-20 h-20 object-contain mb-4" />
+            <h3 class="text-xl font-semibold text-center text-gray-800">PT Multi IT Solusindo</h3>
+            <p class="text-sky-500 text-center">Bidang: Sistem Intregator</p>
+            <p class="text-gray-600 mt-2 text-center">Alamat: Jl. Tulip Blok E5 No 19 Perumahan Kirana Cibitung</p>
+            <a href="mailto:info@multiitsolusindo.com" class="mt-4 bg-[#0054A6] text-white px-4 py-2 rounded shadow hover:bg-sky-700">Email</a>
+        </div>
+        <div class="bg-white p-6 rounded shadow-lg flex flex-col items-center">
+            <img src="smartplus.jpg" alt="Logo PT Solusi Digital" class="w-20 h-20 object-contain mb-4" />
+            <h3 class="text-xl font-semibold text-center text-gray-800">PT SMARTPLUS INDONESIA</h3>
+            <p class="text-sky-500 text-center">Bidang: One Stop IoT Solutions</p>
+            <p class="text-gray-600 mt-2 text-center">Alamat: central park cikarang .jl,boulevard raya, karang raharja,cikarang utara,kab,bekasi</p>
+            <a href="mailto:info@solusidigital.com" class="mt-4 bg-[#0054A6] text-white px-4 py-2 rounded shadow hover:bg-sky-700">Email</a>
+        </div>
+        <div class="bg-white p-6 rounded shadow-lg flex flex-col items-center">
+            <img src="yorindo.jpeg" alt="Logo PT Data Cerdas" class="w-20 h-20 object-contain mb-4" />
+            <h3 class="text-xl font-semibold text-center text-gray-800">PT Yorindo</h3>
+            <p class="text-sky-500 text-center">Bidang: Event organizer</p>
+            <p class="text-gray-600 mt-2 text-center">Alamat: Gedung JIA-BC Business Center, Jl. Cut Mutia No.30, Margahayu, Kec. Bekasi Tim., Bekasi Timur,</p>
+            <a href="mailto:info@datacerdas.com" class="mt-4 bg-[#0054A6] text-white px-4 py-2 rounded shadow hover:bg-sky-700">Email</a>
+        </div>
+        <!-- Tambahkan card anggota lain sesuai kebutuhan -->
+    </div>
+</section>
+        <!-- ...isi grid anggota... -->
+    </section>
+     <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s, transform 0.8s;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.bg-white.p-6').forEach((el, i) => {
+                el.classList.add('fade-in');
+                setTimeout(() => {
+                    el.classList.add('visible');
+                }, 200 + i * 150);
+            });
+        });
+    </script>
+</body>
+</html>

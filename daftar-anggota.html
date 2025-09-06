@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="icon" type="image/png" href="aptiknas3.png">
+    <meta charset="UTF-8">
+    <title>Daftar Anggota APTIKNAS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 font-sans min-h-screen">
+    <!-- Header -->
+     <header class="bg-white shadow-lg border-b-4 border-[#0054A6]">
+    <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <img src="Aptiknas Logo Horizontal 1 Transparent.png" alt="Logo APTIKNAS" class="h-24 rounded bg-white p-1" />
+        </div>
+        <ul class="flex space-x-4 text-lg">
+            <li><a href="index.html" class="hover:text-[#0054A6] text-[#0054A6] font-bold ">Beranda</a></li>
+            <li class="relative group">
+    <button class="hover:text-[#0054A6] text-[#0054A6] font-bold flex items-center">
+        Anggota
+        <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M19 9l-7 7-7-7"/>
+        </svg>
+    </button>
+    <ul class="absolute left-0 top-full mt-0 w-56 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible pointer-events-none group-hover:pointer-events-auto transition-all duration-200 z-20">
+        <li>
+            <a href="daftar-anggota.html" class="block px-4 py-2 hover:bg-gray-100 text-gray-800">Daftar Anggota APTIKNAS</a>
+        </li>
+        <li>
+            <a href="anggota.html" class="block px-4 py-2 hover:bg-gray-100 text-gray-800">Anggota APTIKNAS</a>
+        </li>
+    </ul>
+</li>
+            <li class="relative group">
+                <button class="hover:text-[#0054A6] text-[#0054A6] font-bold flex items-center">
+                    Toko
+                    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <ul class="absolute left-0 mt-2 w-56 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-200 z-20">
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 text-gray-800">Menu 1</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 text-gray-800">Menu 2</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="pengurus.html" class="hover:text-[#0054A6] text-[#0054A6] font-bold">Pengurus</a></li>
+            <li><a href="index.html#contact" class="hover:text-[#0054A6] text-[#0054A6] font-bold">Kontak</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Form Section -->
+    <section class="container mx-auto px-4 py-8 flex justify-center">
+        <div class="bg-white rounded-lg shadow-lg p-8 w-full max-w-2xl fade-in">
+            <h2 class="text-2xl font-bold mb-6 text-center">
+    Formulir Pendaftaran Anggota
+    <span class="inline-flex">
+        <span class="text-red-600">AP</span>
+        <span class="text-sky-500">TIK</span>
+        <span class="text-green-600">NAS</span>
+    </span>
+</h2>
+            <form method="POST" action="/daftar-anggota" class="space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input name="firstName" placeholder="First Name" required class="input-form" />
+                    <input name="lastName" placeholder="Last Name" required class="input-form" />
+                    <input name="company" placeholder="Company" required class="input-form" />
+                    <input name="mobilePhone" placeholder="Mobile Phone" required class="input-form" />
+                    <input name="email" placeholder="Email" required class="input-form" />
+                    <input name="website" placeholder="Website" class="input-form" />
+                    <input name="street" placeholder="Street" class="input-form" />
+                    <input name="city" placeholder="City" class="input-form" />
+                    <input name="postalCode" placeholder="Postal Code" class="input-form" />
+                    <input name="industry" placeholder="Industry" class="input-form" />
+                    <input name="annualRevenue" placeholder="Annual Revenue" class="input-form" />
+                    <input name="noNIBSIUP" placeholder="No NIB SIUP" class="input-form" />
+                    <input name="npwpUsaha" placeholder="NPWP Usaha" class="input-form" />
+                    <input name="numberOfEmployees" placeholder="Number of Employees" class="input-form" />
+                    <input name="nearestDPD" placeholder="Nearest DPD Location" class="input-form" />
+                </div>
+                <button type="submit" class="mt-6 w-full py-3 bg-[#0054A6] text-white font-bold rounded-lg shadow transition duration-300 hover:bg-indigo-600 hover:scale-105">Daftar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Efek transisi input -->
+    <style>
+        .input-form {
+            width: 100%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            outline: none;
+            transition: box-shadow 0.3s, border-color 0.3s;
+        }
+        .input-form:focus {
+            box-shadow: 0 0 0 2px #0054A6;
+            border-color: #0054A6;
+        }
+    </style>
+    <style>
+    .input-form {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        border: 1px solid #d1d5db;
+        border-radius: 0.5rem;
+        outline: none;
+        transition: box-shadow 0.3s, border-color 0.3s;
+    }
+    .input-form:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px #0054A6;
+        border-color: #0054A6;
+    }
+    .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 0.8s ease forwards;
+    }
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+</body>
+</html>

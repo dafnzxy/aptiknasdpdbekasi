@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="icon" type="image/png" href="aptiknas3.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Asosiasi Pengusaha Teknologi Informasi dan Komunikasi Nasional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for slider functionality */
+        .slide {
+            display: none;
+        }
+        .slide.active {
+            display: block;
+        }
+        .cards-box {
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
+        .invert-color {
+            filter: invert(1);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 font-sans">
+    <!-- Header -->
+  <header class="bg-white shadow-lg border-b-4 border-[#0054A6]">
+    <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <img src="Aptiknas Logo Horizontal 1 Transparent.png" alt="Logo APTIKNAS" class="h-24 rounded bg-white p-1" />
+        </div>
+        <ul class="flex space-x-4 text-lg">
+            <li><a href="index.html" class="hover:text-[#0054A6] text-[#0054A6] font-bold ">Beranda</a></li>
+            <li class="relative group">
+    <button class="hover:text-[#0054A6] text-[#0054A6] font-bold flex items-center">
+        Anggota
+        <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M19 9l-7 7-7-7"/>
+        </svg>
+    </button>
+    <ul class="absolute left-0 top-full mt-0 w-56 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible pointer-events-none group-hover:pointer-events-auto transition-all duration-200 z-20">
+        <li>
+            <a href="daftar-anggota.html" class="block px-4 py-2 hover:bg-gray-100 text-gray-800">Daftar Anggota APTIKNAS</a>
+        </li>
+        <li>
+            <a href="anggota.html" class="block px-4 py-2 hover:bg-gray-100 text-gray-800">Anggota APTIKNAS</a>
+        </li>
+    </ul>
+</li>
+            <li class="relative group">
+                <button class="hover:text-[#0054A6] text-[#0054A6] font-bold flex items-center">
+                    Toko
+                    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <ul class="absolute left-0 mt-2 w-56 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-200 z-20">
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 text-gray-800">Menu 1</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 text-gray-800">Menu 2</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="pengurus.html" class="hover:text-[#0054A6] text-[#0054A6] font-bold">Pengurus</a></li>
+            <li><a href="index.html#contact" class="hover:text-[#0054A6] text-[#0054A6] font-bold">Kontak</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Hero Section -->
+   <section id="about" class="container mx-auto px-4 py-8 text-center">
+    <div class="flex flex-col items-center justify-center">
+        <div class="flex items-center justify-center">
+            <span class="text-4xl font-bold mr-2">Selamat Datang di</span>
+            <span class="inline-flex">
+                <span class="text-4xl font-bold text-red-600">AP</span>
+                <span class="text-4xl font-bold text-sky-500">TIK</span>
+                <span class="text-4xl font-bold text-green-600">NAS</span>
+                <span class="text-4xl font-bold ml-2"> DPD BEKASI</span>
+            </span>
+        </div>
+    </div>
+</section>
+
+<!-- Slider Section -->
+<section class="container mx-auto px-4 py-4 flex justify-center">
+    <div class="relative max-w-3xl w-full rounded-lg overflow-hidden flex flex-col items-center">
+        <div id="slider" class="relative w-full h-[32rem] flex items-center justify-center">
+            <img src="dokumen3.jpg" alt="Foto 1" class="slider-img absolute inset-0 w-full h-[32rem] object-cover opacity-0 transition-opacity duration-700" />
+            <img src="dokumen1.jpg" alt="Foto 2" class="slider-img absolute inset-0 w-full h-[32rem] object-cover opacity-0 transition-opacity duration-700" />
+            <img src="dokumen2.jpg" alt="Foto 3" class="slider-img absolute inset-0 w-full h-[32rem] object-cover opacity-0 transition-opacity duration-700" />
+        </div>
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
+            <span class="slider-dot w-3 h-3 rounded-full bg-white border border-[#0054A6] cursor-pointer"></span>
+            <span class="slider-dot w-3 h-3 rounded-full bg-white border border-[#0054A6] cursor-pointer"></span>
+            <span class="slider-dot w-3 h-3 rounded-full bg-white border border-[#0054A6] cursor-pointer"></span>
+        </div>
+    </div>
+</section>
+
+ <p class="text-lg text-gray-700 max-w-2xl mx-auto mt-6 text-center">
+        APTIKNAS (Asosiasi Penyelenggara Telekomunikasi dan Informatika Nasional) adalah sebuah organisasi di Indonesia yang bergerak dalam bidang teknologi informasi dan telekomunikasi. APTIKNAS memiliki beberapa cabang di berbagai wilayah di Indonesia, salah satunya adalah APTIKNAS Bekasi.
+    </p>
+
+<!-- Tambahkan script filter sederhana sebelum </body> -->
+<script>
+    // ...existing code...
+    // Filter anggota perusahaan
+    document.getElementById('searchInput').addEventListener('input', function() {
+        const keyword = this.value.toLowerCase();
+        document.querySelectorAll('.member-card').forEach(card => {
+            const name = card.querySelector('h3').textContent.toLowerCase();
+            card.style.display = name.includes(keyword) ? '' : 'none';
+        });
+    });
+</script>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-indigo-700 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Hubungi Kami</h2>
+            <p class="text-lg mb-6">Bergabunglah dengan APTI untuk jaringan yang lebih luas!</p>
+            <a href="mailto:info@apti.or.id" class="bg-white text-indigo-700 px-6 py-3 rounded shadow hover:bg-gray-100">Kirim Email</a>
+        </div>
+    </section>
+
+    <!-- JavaScript for Slider -->
+    
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelectorAll('.slider-img');
+    const dots = document.querySelectorAll('.slider-dot');
+    let current = 0;
+    let interval = null;
+
+    function showSlide(idx) {
+        slides.forEach((img, i) => {
+            img.style.opacity = (i === idx) ? '1' : '0';
+            img.style.zIndex = (i === idx) ? '1' : '0';
+        });
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('bg-[#0054A6]', i === idx);
+            dot.classList.toggle('bg-opacity-100', i === idx);
+            dot.classList.toggle('bg-opacity-70', i !== idx);
+        });
+    }
+
+    function nextSlide() {
+        current = (current + 1) % slides.length;
+        showSlide(current);
+    }
+
+    // Dot navigation
+    dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+            current = i;
+            showSlide(current);
+            resetInterval();
+        });
+    });
+
+    function resetInterval() {
+        clearInterval(interval);
+        interval = setInterval(nextSlide, 3500);
+    }
+
+    showSlide(current);
+    interval = setInterval(nextSlide, 3500);
+});
+</script>
+<style>
+    .menu-gradient {
+        background: linear-gradient(90deg, #f472b6, #38bdf8, #22c55e, #38bdf8, #f472b6);
+        background-size: 400% 400%;
+        animation: gradientMove 6s ease infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+    }
+    @keyframes gradientMove {
+        0% {background-position:0% 50%;}
+        50% {background-position:100% 50%;}
+        100% {background-position:0% 50%;}
+    }
+</style>
+</body>
+</html>
+</content>
+</create_file>

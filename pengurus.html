@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="icon" type="image/png" href="aptiknas3.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Pengurus APTIKNAS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s, transform 0.8s;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 font-sans">
+     <header class="bg-white shadow-lg border-b-4 border-[#0054A6]">
+    <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <img src="Aptiknas Logo Horizontal 1 Transparent.png" alt="Logo APTIKNAS" class="h-24 rounded bg-white p-1" />
+        </div>
+        <ul class="flex space-x-4 text-lg">
+            <li><a href="index.html" class="hover:text-[#0054A6] text-[#0054A6] font-bold ">Beranda</a></li>
+            <li class="relative group">
+    <button class="hover:text-[#0054A6] text-[#0054A6] font-bold flex items-center">
+        Anggota
+        <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M19 9l-7 7-7-7"/>
+        </svg>
+    </button>
+    <ul class="absolute left-0 top-full mt-0 w-56 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible pointer-events-none group-hover:pointer-events-auto transition-all duration-200 z-20">
+        <li>
+            <a href="daftar-anggota.html" class="block px-4 py-2 hover:bg-gray-100 text-gray-800">Daftar Anggota APTIKNAS</a>
+        </li>
+        <li>
+            <a href="anggota.html" class="block px-4 py-2 hover:bg-gray-100 text-gray-800">Anggota APTIKNAS</a>
+        </li>
+    </ul>
+</li>
+            <li class="relative group">
+                <button class="hover:text-[#0054A6] text-[#0054A6] font-bold flex items-center">
+                    Toko
+                    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <ul class="absolute left-0 mt-2 w-56 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-200 z-20">
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 text-gray-800">Menu 1</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 text-gray-800">Menu 2</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="pengurus.html" class="hover:text-[#0054A6] text-[#0054A6] font-bold">Pengurus</a></li>
+            <li><a href="index.html#contact" class="hover:text-[#0054A6] text-[#0054A6] font-bold">Kontak</a></li>
+        </ul>
+    </nav>
+</header>
+    <!-- Section Pengurus -->
+<section id="board" class="bg-white shadow-md py-20">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-10 fade-in">
+    Daftar Pengurus
+    <span class="inline-block align-middle">
+        <span class="text-red-600">AP</span><span class="text-sky-500">TIK</span><span class="text-green-600">NAS</span>
+    </span>
+</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-indigo-50 p-6 rounded shadow-lg flex flex-col items-center fade-in">
+                <img src="aptiknas3.png" alt="Ketua Umum" class="w-24 h-24 rounded-full object-cover mb-4" />
+                <h3 class="text-xl font-semibold text-center text-indigo-800">agus dedi</h3>
+                <p class="text-indigo-600 text-center">Ketua Bidang</p>
+                <p class="text-gray-600 mt-2 text-center">agus@aptiknas.or.id</p>
+            </div>
+            <div class="bg-indigo-50 p-6 rounded shadow-lg flex flex-col items-center fade-in">
+                <img src="aptiknas3.png" alt="Sekretaris" class="w-24 h-24 rounded-full object-cover mb-4" />
+                <h3 class="text-xl font-semibold text-center text-indigo-800">yolanda Roring</h3>
+                <p class="text-indigo-600 text-center">Sekretaris</p>
+                <p class="text-gray-600 mt-2 text-center">yolanda@aptiknas.or.id</p>
+            </div>
+            <div class="bg-indigo-50 p-6 rounded shadow-lg flex flex-col items-center fade-in">
+                <img src="aptiknas3.png" alt="Bendahara" class="w-24 h-24 rounded-full object-cover mb-4" />
+                <h3 class="text-xl font-semibold text-center text-indigo-800">Yudi Effendi</h3>
+                <p class="text-indigo-600 text-center">Bendahara</p>
+                <p class="text-gray-600 mt-2 text-center">yudi@aptiknas.or.id</p>
+            </div>
+                <!-- Tambahkan pengurus lain sesuai kebutuhan -->
+            </div>
+        </div>
+    </section>
+    <script>
+        // Fade-in effect saat halaman dimuat
+        window.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.fade-in').forEach((el, i) => {
+                setTimeout(() => {
+                    el.classList.add('visible');
+                }, 200 + i * 200);
+            });
+        });
+    </script>
+</body>
+</html>
